@@ -1,0 +1,9 @@
+E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\QRFrameworkCore\bin\Debug\netcoreapp1.1\QRFrameworkCore.deps.json
+E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\QRFrameworkCore\bin\Debug\netcoreapp1.1\QRFrameworkCore.runtimeconfig.json
+E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\QRFrameworkCore\bin\Debug\netcoreapp1.1\QRFrameworkCore.runtimeconfig.dev.json
+E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\QRFrameworkCore\bin\Debug\netcoreapp1.1\QRFrameworkCore.dll
+E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\QRFrameworkCore\bin\Debug\netcoreapp1.1\QRFrameworkCore.pdb
+E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\QRFrameworkCore\obj\Debug\netcoreapp1.1\QRFrameworkCore.AssemblyInfo.cs
+E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\QRFrameworkCore\obj\Debug\netcoreapp1.1\QRFrameworkCore.dll
+E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\QRFrameworkCore\obj\Debug\netcoreapp1.1\QRFrameworkCore.pdb
+E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\QRFrameworkCore\obj\Debug\netcoreapp1.1\QRFrameworkCore.csprojResolveAssemblyReference.cache
