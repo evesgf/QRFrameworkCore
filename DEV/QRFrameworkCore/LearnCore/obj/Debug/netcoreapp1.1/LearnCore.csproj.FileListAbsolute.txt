@@ -1,9 +1,0 @@
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\LearnCore\bin\Debug\netcoreapp1.1\LearnCore.deps.json
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\LearnCore\bin\Debug\netcoreapp1.1\LearnCore.runtimeconfig.json
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\LearnCore\bin\Debug\netcoreapp1.1\LearnCore.runtimeconfig.dev.json
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\LearnCore\bin\Debug\netcoreapp1.1\LearnCore.dll
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\LearnCore\obj\Debug\netcoreapp1.1\LearnCore.AssemblyInfo.cs
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\LearnCore\bin\Debug\netcoreapp1.1\LearnCore.pdb
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\LearnCore\obj\Debug\netcoreapp1.1\LearnCore.dll
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\LearnCore\obj\Debug\netcoreapp1.1\LearnCore.pdb
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\LearnCore\obj\Debug\netcoreapp1.1\LearnCore.csprojResolveAssemblyReference.cache
