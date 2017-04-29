@@ -1,6 +1,0 @@
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\Domain\bin\Debug\netcoreapp1.1\Domain.deps.json
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\Domain\bin\Debug\netcoreapp1.1\Domain.dll
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\Domain\bin\Debug\netcoreapp1.1\Domain.pdb
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\Domain\obj\Debug\netcoreapp1.1\Domain.AssemblyInfo.cs
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\Domain\obj\Debug\netcoreapp1.1\Domain.dll
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore\Domain\obj\Debug\netcoreapp1.1\Domain.pdb
