@@ -1,0 +1,8 @@
+E:\coding\TestCoreEF\TestConfig\bin\Debug\netcoreapp1.1\TestConfig.deps.json
+E:\coding\TestCoreEF\TestConfig\bin\Debug\netcoreapp1.1\TestConfig.runtimeconfig.json
+E:\coding\TestCoreEF\TestConfig\bin\Debug\netcoreapp1.1\TestConfig.runtimeconfig.dev.json
+E:\coding\TestCoreEF\TestConfig\bin\Debug\netcoreapp1.1\TestConfig.dll
+E:\coding\TestCoreEF\TestConfig\bin\Debug\netcoreapp1.1\TestConfig.pdb
+E:\coding\TestCoreEF\TestConfig\obj\Debug\netcoreapp1.1\TestConfig.AssemblyInfo.cs
+E:\coding\TestCoreEF\TestConfig\obj\Debug\netcoreapp1.1\TestConfig.dll
+E:\coding\TestCoreEF\TestConfig\obj\Debug\netcoreapp1.1\TestConfig.pdb

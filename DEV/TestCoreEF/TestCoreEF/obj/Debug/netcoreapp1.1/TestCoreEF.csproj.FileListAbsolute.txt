@@ -1,0 +1,10 @@
+E:\coding\TestCoreEF\TestCoreEF\bin\Debug\netcoreapp1.1\siteconfig.json
+E:\coding\TestCoreEF\TestCoreEF\bin\Debug\netcoreapp1.1\TestCoreEF.deps.json
+E:\coding\TestCoreEF\TestCoreEF\bin\Debug\netcoreapp1.1\TestCoreEF.runtimeconfig.json
+E:\coding\TestCoreEF\TestCoreEF\bin\Debug\netcoreapp1.1\TestCoreEF.runtimeconfig.dev.json
+E:\coding\TestCoreEF\TestCoreEF\bin\Debug\netcoreapp1.1\TestCoreEF.dll
+E:\coding\TestCoreEF\TestCoreEF\bin\Debug\netcoreapp1.1\TestCoreEF.pdb
+E:\coding\TestCoreEF\TestCoreEF\obj\Debug\netcoreapp1.1\TestCoreEF.AssemblyInfo.cs
+E:\coding\TestCoreEF\TestCoreEF\obj\Debug\netcoreapp1.1\TestCoreEF.dll
+E:\coding\TestCoreEF\TestCoreEF\obj\Debug\netcoreapp1.1\TestCoreEF.pdb
+E:\coding\TestCoreEF\TestCoreEF\obj\Debug\netcoreapp1.1\TestCoreEF.csprojResolveAssemblyReference.cache
