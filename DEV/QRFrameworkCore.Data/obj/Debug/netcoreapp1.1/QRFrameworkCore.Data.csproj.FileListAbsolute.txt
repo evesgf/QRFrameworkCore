@@ -1,4 +1,0 @@
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore.Data\bin\Debug\netcoreapp1.1\QRFrameworkCore.Data.deps.json
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore.Data\bin\Debug\netcoreapp1.1\QRFrameworkCore.Data.dll
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore.Data\obj\Debug\netcoreapp1.1\QRFrameworkCore.Data.csprojResolveAssemblyReference.cache
-E:\Dev\QRFrameworkCore\DEV\QRFrameworkCore.Data\obj\Debug\netcoreapp1.1\QRFrameworkCore.Data.AssemblyInfo.cs

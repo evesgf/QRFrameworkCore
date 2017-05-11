@@ -1,6 +1,0 @@
-E:\Dev\QRFrameworkCore\DEV\CsvHelper\bin\Debug\CsvHelper.exe.config
-E:\Dev\QRFrameworkCore\DEV\CsvHelper\bin\Debug\CsvHelper.exe
-E:\Dev\QRFrameworkCore\DEV\CsvHelper\bin\Debug\CsvHelper.pdb
-E:\Dev\QRFrameworkCore\DEV\CsvHelper\obj\Debug\CsvHelper.csprojResolveAssemblyReference.cache
-E:\Dev\QRFrameworkCore\DEV\CsvHelper\obj\Debug\CsvHelper.exe
-E:\Dev\QRFrameworkCore\DEV\CsvHelper\obj\Debug\CsvHelper.pdb

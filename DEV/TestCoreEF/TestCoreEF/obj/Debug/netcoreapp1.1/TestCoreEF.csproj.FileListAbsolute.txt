@@ -8,3 +8,8 @@ E:\coding\TestCoreEF\TestCoreEF\obj\Debug\netcoreapp1.1\TestCoreEF.AssemblyInfo.
 E:\coding\TestCoreEF\TestCoreEF\obj\Debug\netcoreapp1.1\TestCoreEF.dll
 E:\coding\TestCoreEF\TestCoreEF\obj\Debug\netcoreapp1.1\TestCoreEF.pdb
 E:\coding\TestCoreEF\TestCoreEF\obj\Debug\netcoreapp1.1\TestCoreEF.csprojResolveAssemblyReference.cache
+E:\Project\QRFrameworkCore\DEV\TestCoreEF\TestCoreEF\bin\Debug\netcoreapp1.1\TestCoreEF.deps.json
+E:\Project\QRFrameworkCore\DEV\TestCoreEF\TestCoreEF\bin\Debug\netcoreapp1.1\TestCoreEF.runtimeconfig.json
+E:\Project\QRFrameworkCore\DEV\TestCoreEF\TestCoreEF\bin\Debug\netcoreapp1.1\TestCoreEF.runtimeconfig.dev.json
+E:\Project\QRFrameworkCore\DEV\TestCoreEF\TestCoreEF\obj\Debug\netcoreapp1.1\TestCoreEF.csprojResolveAssemblyReference.cache
+E:\Project\QRFrameworkCore\DEV\TestCoreEF\TestCoreEF\obj\Debug\netcoreapp1.1\TestCoreEF.AssemblyInfo.cs

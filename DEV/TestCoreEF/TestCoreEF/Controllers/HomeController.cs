@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-using System.Linq;
-using TestCoreEF.Dao;
+﻿using TestCoreEF.Dao;
 using TestCoreEF.Models;
 
 namespace TestCoreEF.Controllers
