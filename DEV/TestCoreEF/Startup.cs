@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using TestRepository.Repository;
-using TestRepository.Services;
+using TestCoreEF.Dao;
+using TestCoreEF.Models;
+using TestCoreEF.Repository;
+using TestCoreEF.Services;
 
-namespace TestRepository
+namespace TestCoreEF
 {
     public class Startup
     {
@@ -34,14 +32,18 @@ namespace TestRepository
             services.AddMvc();
 
             //SqlServer
-            var connection = @"Server=.;Database=TestRepository;User ID=sa;Password=sa";
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection));
+            //var connection = @"Server=.;Database=TestEF;User ID=sa;Password=sa";
+            //services.AddDbContext<TestDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SqlServerConnection")));
+
+            services.Configure<ApplicationConfiguration>(Configuration.GetSection("ApplicationConfiguration"));
 
             //MySql
-            //var mysqlConnection = @"Data Source=localhost;port=3306;Initial Catalog=TestRepository;uid=root;password=;Charset=utf8";
-            //services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(mysqlConnection));
+            var mysqlConnection = @"Data Source=localhost;port=3306;Initial Catalog=TestEF;uid=root;password=;Charset=utf8";
+            services.AddDbContext<TestDBContext>(options => options.UseMySql(mysqlConnection));
 
-            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IRepository<SYS_Model>
+                , Repository<SYS_Model>>();
+            services.AddTransient<IUserService, UserServcie>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
