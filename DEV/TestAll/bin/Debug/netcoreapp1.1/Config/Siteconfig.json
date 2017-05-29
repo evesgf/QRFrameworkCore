@@ -1,8 +1,0 @@
-﻿//记得设置拷贝到项目
-
-{
-  "DBConfig": {
-    //连接字符串
-    "DbLink": "Data Source=localhost;port=3306;Initial Catalog=TestAll;uid=root;password=;Charset=utf8"
-  } 
-}
