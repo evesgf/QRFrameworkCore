@@ -4,14 +4,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using TestRepository.Repository;
-using TestRepository.Services;
+using TestAll.Config;
+using TestAll.Services;
 
-namespace TestRepository
+namespace TestAll
 {
     public class Startup
     {
@@ -30,19 +29,14 @@ namespace TestRepository
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //Add-Migration InitialCreate
-            //Update-Database
-
             // Add framework services.
             services.AddMvc();
 
-            //SqlServer
-            var connection = @"Server=.;Database=TestRepository;User ID=sa;Password=sa";
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection));
+            //添加配置
+            //services.Configure<AppConfig>(Configuration.GetSection("DBConfig"));
 
-            //MySql
-            //var mysqlConnection = @"Data Source=localhost;port=3306;Initial Catalog=TestRepository;uid=root;password=;Charset=utf8";
-            //services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(mysqlConnection));
+            //依赖注入
+            services.AddTransient<IAppConfigService, AppConfigService>();
 
             services.AddTransient<IUserService, UserService>();
         }
@@ -53,24 +47,7 @@ namespace TestRepository
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-            }
-
-            app.UseStaticFiles();
-
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app.UseMvc();
         }
     }
 }

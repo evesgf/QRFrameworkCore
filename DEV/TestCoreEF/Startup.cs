@@ -28,6 +28,9 @@ namespace TestCoreEF
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Add-Migration InitialCreate
+            //Update-Database
+
             // Add framework services.
             services.AddMvc();
 
@@ -41,8 +44,7 @@ namespace TestCoreEF
             var mysqlConnection = @"Data Source=localhost;port=3306;Initial Catalog=TestEF;uid=root;password=;Charset=utf8";
             services.AddDbContext<TestDBContext>(options => options.UseMySql(mysqlConnection));
 
-            services.AddTransient<IRepository<SYS_Model>
-                , Repository<SYS_Model>>();
+            services.AddTransient<IRepository<SYS_Model>, Repository<SYS_Model>>();
             services.AddTransient<IUserService, UserServcie>();
         }
 

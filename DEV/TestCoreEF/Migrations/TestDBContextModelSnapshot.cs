@@ -20,11 +20,17 @@ namespace TestCoreEF.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("UserName");
+                    b.Property<string>("PassWord")
+                        .IsRequired()
+                        .HasMaxLength(50);
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasMaxLength(50);
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sys_Model");
+                    b.ToTable("SYS_Model");
                 });
         }
     }
