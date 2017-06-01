@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TestAll.Config;
+using TestAll.Dao;
+using TestAll.Entitys;
+using TestAll.Resposity;
 using TestAll.Services;
 
 namespace TestAll.Controllers
@@ -31,7 +34,7 @@ namespace TestAll.Controllers
 
             //var a = _appConfigService.appConfigurations;
 
-            return new string[] { a, _userService.TestService() };
+            return new string[] { _userService.Test2(), _userService.TestService() };
         }
 
         // GET api/values/5
