@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.Loader;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -44,25 +45,15 @@ namespace TestAll
             //依赖注入
             services.AddTransient<IAppConfigService, AppConfigService>();
 
-            services.AddTransient<IUserService, UserService>();
+            //services.AddTransient<IUserService, UserService>();
 
             services.AddTransient<IRepository<Sys_User>, TestRepository>();
 
             //循环依赖注入
-            //AddCommandHandlers(services, DomainAssembly.Reference);
+            services.AddCommandHandlers(Assembly.GetEntryAssembly());
 
             // Add framework services.
             services.AddMvc();
-        }
-
-        public static void AddCommandHandlers(this IServiceCollection services, params Assembly[] assemblies)
-        {
-            var serviceType = typeof(IUserService);
-
-            foreach (var implementationType in assemblies.SelectMany(assembly => assembly.GetTypes()).Where(type => serviceType.IsAssignableFrom(type) && !type.GetTypeInfo().IsAbstract))
-            {
-                services.AddSingleton(serviceType, implementationType);
-            }
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
