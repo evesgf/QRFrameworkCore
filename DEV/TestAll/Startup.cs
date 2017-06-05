@@ -43,7 +43,7 @@ namespace TestAll
             services.AddDbContext<TestAllDbContext>(options => options.UseMySQL(dblink));
 
             //依赖注入
-            services.AddTransient<IAppConfigService, AppConfigService>();
+            //services.AddTransient<IAppConfigService, AppConfigService>();
 
             //services.AddTransient<IUserService, UserService>();
 

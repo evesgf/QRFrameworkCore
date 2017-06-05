@@ -7,7 +7,7 @@ using TestAll.Entitys;
 
 namespace TestAll.Services
 {
-    public interface IUserService
+    public interface IUserService : IDependencyRegister
     {
         string TestService();
 
