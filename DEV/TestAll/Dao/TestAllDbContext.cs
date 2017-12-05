@@ -10,6 +10,7 @@ namespace TestAll.Dao
 {
     /// <summary>
     /// 生成数据库架构：Add-Migration MyFirstMigration
+    /// 开启自动迁移：Enable-Migrations -EnableAutomaticMigrations
     /// 更新数据库：Update-Database
     /// </summary>
     public class TestAllDbContext:DbContext

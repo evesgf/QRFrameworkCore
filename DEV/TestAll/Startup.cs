@@ -52,6 +52,9 @@ namespace TestAll
             //循环依赖注入
             services.AddCommandHandlers(Assembly.GetEntryAssembly());
 
+            //注册缓存
+            services.AddMemoryCache();
+
             // Add framework services.
             services.AddMvc();
         }

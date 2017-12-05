@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using TestAll.Config;
 using TestAll.Dao;
 using TestAll.Entitys;
@@ -16,13 +17,16 @@ namespace TestAll.Controllers
     {
         private readonly IAppConfigService _appConfigService;
 
+        private IMemoryCache _memoryCache;
+
         private readonly IUserService _userService;
 
         public ValuesController(IAppConfigService appConfigService,
+            IMemoryCache memoryCache,
             IUserService userService)
         {
             _appConfigService = appConfigService;
-
+            _memoryCache = memoryCache;
             _userService = userService;
         }
 
@@ -34,7 +38,25 @@ namespace TestAll.Controllers
 
             //var a = _appConfigService.appConfigurations;
 
-            return new string[] { _userService.Test2(), _userService.TestService() };
+            string key1 = "value1";
+            string key2 = "value2";
+
+            string result1;
+            string result2;
+
+            if (!_memoryCache.TryGetValue(key1, out result1))
+            {
+                result1 = _userService.Test2();
+                _memoryCache.Set(key1, result1);
+            }
+
+            if (!_memoryCache.TryGetValue(key2, out result2))
+            {
+                result2 = _userService.TestService();
+                _memoryCache.Set(key2, result2);
+            }
+
+            return new string[] { result1, result2 };
         }
 
         // GET api/values/5
